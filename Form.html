@@ -4,113 +4,148 @@
         <title>
             form in html
         </title>
+        
+        <style>
+            .button{  border: none;
+                
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 4px 2px;
+                cursor: pointer;}-->
+                <!-- .button1 {background-color: #4CAF50;} 
+    .button2 {background-color: #008CBA;} 
+    body{
+                background-color: rgb(255, 162, 0);
+            }
+            </style>  
+           
     </head>
     <body>
        
         
 
-        <button class="button button1">Login</button>
+        
 
         <form>
             <table>
+                <tr>
+              <th> 
            <div> 
             <label>enter first name
 
-            </label>
+            </label></th> 
+            <td>
             <input type="text" maxlength="15" minlength="3">
-        </div>
+        </td></tr></div>
         <div>
                                                           
         </div>
+        <tr>
         <div> 
+            <th>
             <label >enter last name
 
-            </label>
+            </label></th>
+            <td>
             <input type="text" >
-        </div><div>
+        </td>
+        </div></tr><div>
             
         </div>
-        <div> <label>enter email</label>
-            <input type="email" ></div>
-            <div>
-                <label>
-                    password
-                </label>
-                <input type="password"  >
-            </div>
+       
+        <div>  <tr><th><label>enter email</label></th>
+            <td>
+            <input type="email" ></td></tr></div>
+            <div><tr>
+                <th>
+                <label>password</label></th>
+                <td> <input type="password"  ></td>
+ 
+
+            </tr></div>
             <div>
             
             </div>
-            <div><label>enter age </label>
-                <input type="number"></div>
+            <tr>
             <div>
+                <th><label>enter age </label></th>
+                <td>
+                <input type="number"></div></td>
+            <div></tr>
+            <div><tr><th>
                 <label>
                     enter contact no
-                </label>
-                <input type="number">
+                </label></th><td>
+                <input type="number"></td>
                 
-            </div>
+            </tr></div>
             <div>
             
             </div>
             <div>
-                <label>
+                <tr>
+               <th> <label>
                     enter gender 
-                </label>
-                <input type="radio" name="gender">male
+                </label></th>
+                <td>
+                <input type="checkbox" name="gender">male
                 <input type="radio" name="gender">female
                 <input type="radio" name="gender">others
+            </td>
+            </tr>
             </div>
             <div>
-                <label>enter Address</label>
-            <textarea rows="10" cols="10"></textarea>
-            </div>
+                <tr>
+                <th><label>enter Address</label></th>
+                <td>           <textarea ></textarea></td>
+        </tr></div>
         <div>
+            <tr>
+                <th>
         <lable>
                 Select city
-            </lable>
+            </lable></th>
+            <td>
             <select>
                 <option>-- select city--</option>
             <option>Belgaum</option>
             <option>Banglore</option>
             <option>Manglore</option>
-        </select>
+        </select></td>
+    </tr>
         </div>
             <div>
             
             </div>
             <div>
-                <label>
+                <tr><th>                <label>
                     enter Date of birth 
-                </label>
-                <input type="date">
-                <div> <label>upload file</label></div>
-                <div> <input type="file"></div>
-                <div><button type="submit" style="color: #4CAF50;">submit</button></div>
-                <div><button type="reset" style="color: #008CBA;">Reset</button></div>
+                </label></th>
+<td>
+                <input type="date"></td>
+            </tr> </div>
+                            <div> <tr><th><label>upload file</label></th>
+             <td><input type="file"></td></tr></div>
+
+
+                </div>
+                <div><tr><th><button type="submit" style="color: #564caf;" style="background-color: #4CAF50;">submit</button>
+                    <button type="reset" style="color: #008CBA;" style="background-color: #4CAF50;">Reset</button></th></tr></div>
                
-                
+               
           
-            
+             
         
-        <style>
-        .button{  border: none;
-            
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 4px 2px;
-            cursor: pointer;}
-            .button1 {background-color: #4CAF50;} 
-.button2 {background-color: #008CBA;} 
-        </style>
-       
+<div><tr>
+    <th>
         <button class="button button2">Signup</button>
+        <button class="button button1">Login</button></th></tr></div>
     </table>
     </form>
 
     </body>
-</html>
+</html> 

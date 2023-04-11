@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                forms
+        </title>
+       
+        <script>
+            function register(){
+
+                console.log("hi buddy")
+                var name =document.getElementById("name")
+                console.log(name.value)
+                var names =document.getElementById("names")
+                names.innerHTML=""
+                if(name.value == ''){
+                        names.innerHTML='please enter name '
+                        names.style.color=" red"
+                       
+                }
+                var lastname =document.getElementById("lastname")
+                var last =document.getElementById("last")
+                last.innerHTML=""
+                if(lastname.value == ''){
+                        last.innerHTML='please enter lastname '
+                        last.style.color=" red"
+                       
+                }
+                var email =document.getElementById("email")
+                console.log(email.value)
+                var emails =document.getElementById("emails")
+                emails.innerHTML=""
+                if(email.value ==''){
+                        emails.innerHTML="please enter email "
+                        emails.style.color=" red"
+
+            }
+            var emails =document.getElementById("emails")
+
+                if(email.value.length < 8 ){
+                        emails.innerHTML="email should be more than 8 letters "
+                        emails.style.color=" red"
+                }
+
+                var passwo =document.getElementById("passwo")
+                    console.log(passwo.value)
+                    var passwords =document.getElementById("passwords")
+                    passwords.innerHTML=""
+                    if(passwo.value == ''){
+                    passwords.innerHTML="please enter password"
+                    passwords.style.color=" red"
+       
+}
+      var gender =  document.registration.gender
+            
+            var genders =document.getElementById("genders")
+            genders.innerHTML=""
+            if(gender[0].checked == false &&gender[1].checked == false &&gender[2].checked == false ){
+                console.log("gender not selected")
+                genders.innerHTML="please select gender"
+                genders.style.color="red"
+            }
+            var city= document.registration.city
+            var citys = document.getElementById("citys")
+            citys.innerHTML=""
+            if(city.value == "0"){
+                console.log("city not selected")
+                citys.innerHTML="please select city"
+                citys.style.color="red"
+            }
+            
+            
+            
+            
+            }
+                
+        </script>
+    </head>
+    <body>
+        <form name="registration">
+           <div> <label for=""> name</label></div>
+           <div>
+            <input type="text"  id="name"></div>
+            <div id="names"></div>
+
+
+            <div> <label for="">last name</label></div>
+           <div>
+            <input type="text"  id="lastname"></div>
+            <div id="last"></div>
+
+
+            <div> <label for=""> email</label></div>
+           <div>
+            <input type="email"  id="email"></div>
+            <div id="emails"></div>
+
+
+            
+            <div> <label for=""> password</label></div>
+           <div>
+            <input type="password"  id="passwo"></div>
+            <div id="passwords"></div>
+
+              
+            <div> <label for=""> gender</label></div>
+           <div>
+            <input type="radio"  name="gender">male
+            <input type="radio"  name="gender">female
+            <input type="radio"  name="gender">other
+        </div>
+            <div id="genders"></div>
+
+            <label for=""> select city</label>
+            <select name="city" id="">
+                <option value="0">--select city--</option>
+                <option value="">banglore</option>
+                <option value="">mysore</option>
+                <option value="">Belagavi</option>
+            </select>
+            <div id="citys"></div>
+
+
+
+           <div><button  type="button" onclick="register()">register</button></div>
+           
+
+        </form>
+    </body>
+</html>
