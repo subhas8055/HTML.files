@@ -1,0 +1,233 @@
+1] What is HTML
+   HTML  stands for hypertext markup language,it is used to create web pages.
+   it provide the structure of web page.
+   
+2]What is Attribute
+   Attribute is predefined word which have certain meaning,written  inside tags
+
+3]Write basic  structure of HTML
+	<!DOCTYPE html>
+	<html> 
+	<head>
+	<title>  </title>
+	</head>
+	<body>
+
+	</body>
+	</html> 
+4] Create an image in HTML
+	<img src="xyz.jpg" alt="">
+
+5]How to crate a hyper link in HTML
+	<a href=" xyz.com" ></a>
+
+6]How to create syntax for table in HTML
+	<table>
+	<tr> 
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+
+	</tr>
+	</table>
+7]create a form with fields name ,password,city,gender,dob
+
+	<form>
+		<label>name</label><br>
+		<input type="text" name="name"><br>
+		
+		<label>password</label><br>
+		<input type="password" name="password">
+
+		<label>gender</label><br>
+		<input type="radio" name="gender" value="male">
+		<input type="radio" name="gender" value="female">
+		<input type="radio" name="gender" value="other">
+
+		<label>city</label><br>
+		<select> 
+		<option>--select city--</option>
+		<option>ASD</option>
+		<option>FGH</option>
+		<option>JKL</option>
+		</select>
+		
+		<label> DOB </label>
+		<input type="date" name="dob">
+
+		<button type="button" >submit</button>
+
+	
+	</form>
+   
+8]  What is css,syntax for css
+	
+	CSS stands for cascading style sheet, it used to give style to the web pages like color ,position etc
+
+
+		<style>
+ 		 button{
+			property:value;
+  		}
+  
+		</style>
+
+9] what is external CSS
+	it is a style sheet written on new page  and it is linked to Html page through <link> tag
+		syntax 
+		<link rel="stylesheet" href="qwe.css">
+
+
+10]  Difference between selectors in css
+	
+	element selector: is used to apply css for only one tag
+				low priority
+	
+	groupselector : is used to apply css for many tags
+				low priority as compare to id and class selector
+
+
+	class selector : is used to apply css which have the specified classes
+				low priority as compare to id selector
+
+	id selector : is used to apply css  which have the specified id
+			higher priority 
+
+
+11.Explain CSS Box Model with example.
+A CSS Box model is an box structure that is wrapped around the HTML Elements.
+This box model structure consists of 3 sections: margin,border and padding
+The box model structure helps to maintain spaces between 2 or more HTNL elements in an webpage
+example:
+
+div{
+width:100;
+margin:0;
+border:20px;
+padding:100px;
+}
+12.Create an image and display names
+
+13.What is JavaScript
+JavaScript is a scripting language used in creating web pages with HTML and CSS.
+with the use of JavaScript the web page can be made a dynamic web page 
+JavaScript is used to calculate,manipulate and alter data based on the requirements taken from the user.
+
+14.Write syntax for javascript
+Syntax for variable declaration and initilization in javascript:
+
+let x;
+var y;
+
+x=10;
+y=11;
+var a=x+y;
+
+Synatx for writting a function:
+function function_name{
+
+function body
+}
+
+
+
+
+15.Difference btw let,var and const
+let: let keyword is used to specify string type of data in javascript and the variables declared are active within the block of code specifed
+	 variable duplicates not allowed
+
+const:const keyword is to specify constant values in javascript where the variable value will not change
+
+var:var keyword is used to specify string type of data and these variables are have the scope within the function.
+		variable duplicates allowed
+
+16] create form and perform form validation in java script
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validate(){
+            let name =document.getElementById("name")
+            let names = document.getElementById("names")
+            names.innerHTML=''
+               if(name.value==''){
+                    names.innerHTML="please enter name "
+                    names.style.color="red"
+                    return
+               } 
+
+               let password =document.getElementById("password")
+               let pwd = document.getElementById("pwd")
+               pwd.innerHTML=''
+               if(password.value==''||password.value.length <4){
+                pwd.innerHTML="please enter valid password"
+                
+                return
+               }
+
+                let gender = document.qwerty.gender
+                var genders =document.getElementById("genders")
+            genders.innerHTML=""
+            if(gender[0].checked == false &&gender[1].checked == false &&gender[2].checked == false ){
+                console.log("gender not selected")
+                genders.innerHTML="please select gender"
+                genders.style.color="red"
+                return
+            }
+
+
+        }
+    </script>
+    
+	<form name="qwerty">
+		<label>name</label><br>
+		<input type="text" id="name"><br>
+        <span id="names"></span><br>
+		
+		<label>password</label><br>
+		<input type="password" id="password"><br>
+        <span id="pwd"></span>
+
+		<label>gender</label><br>
+		<input type="radio" id="gender" value="male">
+		<input type="radio" id="gender" value="female">
+		<input type="radio" id="gender" value="other">
+        <span id="genders"></span>
+<br>
+		<label>city</label><br>
+		<select id="city"> 
+		<option >--select city--</option>
+		<option>ASD</option>
+		<option>FGH</option>
+		<option>JKL</option>
+		</select>
+        <br>
+		
+		<label> DOB </label><br>
+		<input type="date" id="dob"><br>
+
+		<button type="button" onclick="validate()">submit</button>
+
+	
+	</form>
+</body>
+</html>
+
+		
+
+
+
+
+
